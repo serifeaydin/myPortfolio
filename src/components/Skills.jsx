@@ -9,7 +9,7 @@ import FigmaLogo from "../assets/figma-logo.png";
 
 function Skills(){
     return(
-    <div class="w-[1440px] h-[671px] ">
+    <div class=" h-[671px] ">
            <div class="flex w-[960px] h-[430px]">
         <h1 >Skills</h1>
           
