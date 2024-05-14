@@ -9,34 +9,47 @@ import FigmaLogo from "../assets/figma-logo.png";
 
 function Skills(){
     return(
-    <div class=" h-[671px] ">
-           <div class="flex w-[960px] h-[430px]">
-        <h1 >Skills</h1>
-          
-        <div class="flex-col w-[145px] h-[430px]">
+      <div className="flex  justify-center h-96 mt-20  mb-20 space-x-16 mr-48">
+  
+         <div className="">
+        <h1 className="text-[#4832D3] text-5xl font-bold mr-12 ">Skills</h1>
+        </div>
+        <div class="flex-col ">
         
-          <img class="w-[120px] h-[120px]" src={ReactLogo} />
-            
-          <img class="w-[120px] h-[120px]"src={VsCodeLogo}/>
-         
-          <img class="w-[120px] h-[120px]" src={ReduxLogo}/>
-          <div class="flex-col w-[145px] h-[430px]"> <p>REDUX</p>
-           <p>REACT</p>
-           <p>VS CODE</p></div>
+          <img class="w-30 h-30 mb-6" src={ReactLogo} />
+          <img class="w-30 h-30 mb-6"src={VsCodeLogo}/>
+          <img class="w-30 h-30 mb-6" src={ReduxLogo}/>
+          </div>
+        <div className=" text-3xl text-[#777777]">
           
-         </div>
-          <div class="flex-col w-[290px] h-[430px]">
-            <img class="w-[120px] h-[120px]" src={JavaLogo}/>
-           <p>JAVASCRIPT</p>
-           <img class="w-[120px] h-[120px]" src={FigmaLogo}/>
-          <p>FIGMA</p>
-          <img class="w-[120px] h-[120px]" src={NodeLogo} />
-          <p>NODE</p>
+          <p className="mt-10">REACT</p>
+           <p className="mt-24">VS CODE</p>
+           <p className="mt-28">REDUX</p>
+          
+           
+        </div>
+       
+     
+
+
+          <div class="flex-col ">
+          
+          <img class="w-30 h-30 mb-6" src={JavaLogo}/>
+          <img class="w-30 h-30 mb-6" src={FigmaLogo}/>
+          <img class="w-30 h-30 mb-6" src={NodeLogo} />
+          
+          </div>
+
+          <div className="text-3xl text-[#777777]">
+          <p className="mt-10">JAVASCRIPT</p>
+          <p className="mt-24">FIGMA</p>
+          <p className="mt-28"> NODE</p>
+
           </div>
            </div>
-           </div>
-
            
+           
+          
            
       
    
