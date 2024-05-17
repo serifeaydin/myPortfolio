@@ -2,35 +2,47 @@
 import Linkedln from "../assets/linkedln.png";
 import Github from "../assets/github.png";
 import HeroRight from "../assets/hero-right.png";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext.jsx";
+import translations from "../translations.jsx";
+
 
 function Hero(){
+    const { state } = useContext(AppContext);
+  const { language } = state;
+  const t = translations[language];
     return(
-        <div>
-            <div>
-                <p>Serife Aydin</p>
-                <h1>I am a Frontend Developer...</h1>
-                <p>...who likes to craft solid and scalable frontend products with great user experiences.</p>
-            </div>
-            <div> 
-                
-                <a href="" target="_blank">
+        <div className="">
+      <p>Serife Aydin</p>
+      <div className="flex w-[955px] h-[375px]">
+        <div className="flex-col mt-20 w-[528px] ml-36">
+          <h1>{t.title}</h1>
+          <p>{t.description}</p>
+          <div className="flex">
+            <div className=""> 
+              <a href="" target="_blank">
                 <button>
-                    <img src={Github}/>
-                    Github</button>
-                </a>
+                  <img src={Github} alt="Github" />
+                  Github
+                </button>
+              </a>
             </div>
-            <div>
-            <a href="" target="_blank">
+            <div className="">
+              <a href="" target="_blank">
                 <button>
-                    <img src={Linkedln}/>
-                    Linkedln</button>
-                </a>
+                  <img src={Linkedln} alt="LinkedIn" />
+                  LinkedIn
+                </button>
+              </a>
             </div>
-            <div>
-                <img src={HeroRight}></img>
-            </div>
+          </div>
         </div>
-    )
+        <div>
+          <img className="w-[350px] h-[375px]" src={HeroRight} alt="Hero Right" />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Hero;

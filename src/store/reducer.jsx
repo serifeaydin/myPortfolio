@@ -8,7 +8,7 @@ export const initialState = {
   };
 
 
-const reducer=(state, action) {
+export const reducer=(state, action)=> {
     switch (action.type) {
       case CHANGE_LANGUAGE:
         return {
@@ -16,8 +16,7 @@ const reducer=(state, action) {
           language: state.language === "en" ? "tr" : "en"
         };
 
-        
+       
        
     }
   }
-  
