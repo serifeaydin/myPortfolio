@@ -9,6 +9,7 @@
       description:"...who likes to craft solid and scalable frontend products with great user experiences.",
       skills:"Skills",
       profile:"Profile",
+      projects:"Projects",
       
       informationSection:{
         basicInformation:"Basic Information",
@@ -24,15 +25,16 @@
 
         preferredRole:"Preferred Role",
         role:"Frontend Developer",
-},
-     abaoutMe:"About Me",
+      },
+     aboutMe:"About Me",
      aboutSection:"Hi,my name is Serife. I am 31,married and have 2-years-old son.I enjoy cooking, growing flowers, and traveling and learning about different cultures.I have always been interested in software. I had the opportunity to improve myself with Workintech.",
      
      
-     
+  
     
-    projectsData : [
-        {
+    projectsData: [
+      {
+        
           id: 1,
           image: project1,
           projectTitle: "Witflix",
@@ -42,6 +44,7 @@
           github: "https://github.com/serifeaydin/witflix",
           website:"" ,
         },
+      
         {
           id: 2,
           image: project2,
@@ -52,6 +55,7 @@
           github: "https://github.com/serifeaydin/fsweb-s7-challenge-pizza",
           website: "",
         },
+        
         {
           id: 3,
           image: project1,
@@ -61,9 +65,9 @@
           techStack: ["React", "Redux", "JavaScript", "Tailwind"],
           github: "https://github.com/serifeaydin/myPortfolio",
           website:"" ,
-        },
-       
+        }
       ],
+      
       footerSection:{
         first:"Send me a message!",
         second:"Got a question or proposal,or just want to say hello?Go ahead!"
@@ -75,6 +79,7 @@
         description:"...Harika kullanıcı deneyimlerine sahip sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı seven.",
         skills:"Beceriler",
         profile:"Profil",
+        projects:"Projeler",
         
         informationSection:{
           basicInformation:"Temel Bilgiler",
@@ -91,13 +96,13 @@
           preferredRole:"Tercih Ettiği Rol",
           role:"Frontend Developer",
   },
-       abaoutMe:"Hakkımda",
+       aboutMe:"Hakkımda",
        aboutSection:"Merhaba adım Şerife. 31 yaşındayım, evliyim ve 2 yaşında bir oğlum var. Yemek yapmayı, çiçek yetiştirmeyi, seyahat etmeyi ve farklı kültürleri öğrenmeyi seviyorum. Yazılıma her zaman ilgi duydum. Workintech ile kendimi geliştirme fırsatı buldum.",
        
        
        
-      
-      projectsData : [
+      projectsData:
+     [
           {
             id: 1,
             image: project1,
@@ -106,8 +111,9 @@
               "Frontend'de Html kullanılarak geliştirilen bu proje, Css kullanılarak tasarlandı.",
             techStack: ["Html", "Css"],
             github: "https://github.com/serifeaydin/witflix",
-            website:"" ,
+            website:"www.youtube.com" ,
           },
+         
           {
             id: 2,
             image:project2,
@@ -116,8 +122,9 @@
               "React kullanılarak oluşturulan bu pizza sipariş sitesi üç sayfadan oluşuyor: ana sayfa, sipariş formu ve sipariş alındı sayfası.",
             techStack: ["React", "JavaScript", "Css"],
             github: "https://github.com/serifeaydin/fsweb-s7-challenge-pizza",
-            website: "",
+            website: "www.youtube.com",
           },
+          
           {
             id: 3,
             image: project3,
@@ -126,15 +133,15 @@
               "Portföy web sayfası React ile geliştirildi ve Tailwind ile tasarımı zenginleştirildi. Responsive olacak şekilde tasarlandı.",
             techStack: ["React", "Redux", "JavaScript", "Tailwind"],
             github: "https://github.com/serifeaydin/myPortfolio",
-            website:"" ,
-          },
-         
-        ],
+            website:"www.youtube.com" ,
+          }
+      ],
+        
         footerSection:{
           first:"Bana mesaj gönder!",
           second:"Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam edin!"
         }
       },
     }
-  
+   
   export default translations;

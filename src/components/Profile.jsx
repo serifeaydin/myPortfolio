@@ -9,9 +9,9 @@ function Profile() {
   const t = translations[language];
 
   return (
-    <div className="flex bg-indigo-700 h-[552px]">
+    <div className="flex bg-[#4731D3] h-[552px]">
       <div className="mt-24 ml-28">
-        <h1 className="text-lime-400 text-5xl font-bold mb-10">{t.profile}</h1>
+        <h1 className="text-[#CBF281] text-5xl font-bold mb-10">{t.profile}</h1>
         <h2 className="text-3xl text-white mb-[10px]">{t.informationSection.basicInformation}</h2>
         <div className="flex w-[300px] h-[290]">
           <div className="flex-col mt-[10px] text-[#CBF281] w-[150px] h-[202px] font-semibold text-lg">

@@ -1,6 +1,8 @@
 
 
 import { CHANGE_LANGUAGE } from "./actions";
+import { CHANGE_MODE } from "./actions";
+
 
 export const initialState = {
   language: "en",
@@ -15,6 +17,11 @@ export const reducer=(state, action)=> {
           ...state,
           language: state.language === "en" ? "tr" : "en"
         };
+        case CHANGE_MODE:
+            return {
+                ...state,
+                darkMode: !state.darkMode 
+            };
 
        
        

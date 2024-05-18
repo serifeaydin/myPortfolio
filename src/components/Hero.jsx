@@ -12,10 +12,11 @@ function Hero(){
   const { language } = state;
   const t = translations[language];
     return(
-        <div className="">
-      <p>Serife Aydin</p>
-      <div className="flex w-[955px] h-[375px]">
+        <div className=" flex bg-custom-gradient  h-[375px]">
+      
+      
         <div className="flex-col mt-20 w-[528px] ml-36">
+        <p className=" ">Serife Aydin</p>
           <h1>{t.title}</h1>
           <p>{t.description}</p>
           <div className="flex">
@@ -41,7 +42,7 @@ function Hero(){
           <img className="w-[350px] h-[375px]" src={HeroRight} alt="Hero Right" />
         </div>
       </div>
-    </div>
+   
   );
 }
 
