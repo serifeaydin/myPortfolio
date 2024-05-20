@@ -1,5 +1,3 @@
-
-
 import { CHANGE_LANGUAGE } from "./actions";
 import { CHANGE_MODE } from "./actions";
 
