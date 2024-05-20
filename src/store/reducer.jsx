@@ -6,7 +6,7 @@ import { CHANGE_MODE } from "./actions";
 
 export const initialState = {
   language: "en",
-  darkMode:false
+  darkMode:localStorage.getItem('darkMode') === 'true' || false,
   };
 
 
@@ -18,12 +18,12 @@ export const reducer=(state, action)=> {
           language: state.language === "en" ? "tr" : "en"
         };
         case CHANGE_MODE:
-            return {
-                ...state,
-                darkMode: !state.darkMode 
-            };
+      return { ...state, darkMode: !state.darkMode };
+    default:
+      return state;
+  }
 
        
        
     }
-  }
+  

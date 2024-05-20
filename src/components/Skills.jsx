@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import ReactLogo from "../assets/react-logo.png"
 import JavaLogo from "../assets/js-logo.png";
@@ -14,12 +13,16 @@ function Skills(){
   const { language } = state;
   const t = translations[language];
   return(
-    <div className="flex  justify-center mb-20 h-96 space-x-16 mr-48">
+<div>
 
-       <div >
-      <h1 className="text-[#4832D3] text-5xl font-bold mr-10 ">{t.skills}</h1>
-      </div>
-      <div class="flex-col ">
+    <div className="flex mx-8 mt-10"  >
+    <h1 className="text-[#4832D3] text-5xl font-bold  ">{t.skills}</h1>
+    </div>
+    <div className="flex justify-center mb-20 h-96 space-x-16 ">
+
+      
+   
+      <div class="flex-col  ">
       
         <img class="w-30 h-30 mb-6" src={ReactLogo} />
         <img class="w-30 h-30 mb-6"src={VsCodeLogo}/>
@@ -35,7 +38,7 @@ function Skills(){
       </div>
      
    
-
+      
 
         <div class="flex-col ">
         
@@ -53,12 +56,12 @@ function Skills(){
         </div>
          </div>
          
-         
+      
         
          
-    
+         </div>
  
 
    )  
 }
-export default Skills;
+export default Skills; 

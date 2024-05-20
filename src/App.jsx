@@ -8,25 +8,33 @@ import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 
 import Skills from './components/Skills';
-import { AppProvider } from './context/AppContext';
+import { AppContext, AppProvider } from './context/AppContext';
 import Project from './components/Project';
+import { useContext } from 'react';
 
 
-  function App(){
-    
+
+function AppContent() {
+  const { state } = useContext(AppContext);
+
   return (
-    <div >
-          <AppProvider>
-            <Navbar/>
-    
-      <Hero/>
-    <Skills/>
-    <Profile/>
-    <Project/>
-    <Footer/>
-    </AppProvider>
+    <div className={`min-h-screen ${state.darkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Profile />
+      <Project />
+      <Footer />
     </div>
-     
-)
+  );
 }
+
+function App() {
+  return (
+    <AppProvider>
+      <AppContent />
+    </AppProvider>
+  );
+}
+
 export default App;
