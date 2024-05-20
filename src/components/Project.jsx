@@ -12,7 +12,7 @@ const Project = () => {
       <div className="container mx-8 ">
         <h1 className={`${darkMode ? 'text-[#CBF281]':'text-[#4731D3]'} text-5xl font-bold mb-6`}>{t.projects}</h1>
         {t.projectsData.map((project) => (
-          <div key={project.id} className={`${darkMode ? 'bg-[#2B2727]' : 'bg-white'} flex rounded overflow-hidden shadow-lg mb-8 bg-white`}>
+          <div key={project.id} className={`${darkMode ? 'bg-[#2B2727]' : 'bg-white'} flex rounded overflow-hidden shadow-lg mb-8`}>
             <div className=  " w-4/12 flex-shrink-0">
               <img className="" src={project.image} alt={project.projectTitle} />
             </div>

@@ -11,6 +11,7 @@ const translations = {
      profile:"Profile",
      projects:"Projects",
      darkMode:"Dark Mode",
+
      informationSection:{
        basicInformation:"Basic Information",
        dateOfBirth:"Date of Birth",
@@ -81,6 +82,7 @@ const translations = {
        profile:"Profil",
        projects:"Projeler",
        darkMode:"Karanlık Tema",
+       
        informationSection:{
          basicInformation:"Temel Bilgiler",
          dateOfBirth:"Doğum Tarihi",

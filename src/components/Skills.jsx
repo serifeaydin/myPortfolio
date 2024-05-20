@@ -10,13 +10,13 @@ import { AppContext } from "../context/AppContext";
 
 function Skills(){
   const { state } = useContext(AppContext);
-  const { language } = state;
+  const { language,darkMode} = state;
   const t = translations[language];
   return(
 <div>
 
     <div className="flex mx-8 mt-10"  >
-    <h1 className="text-[#4832D3] text-5xl font-bold  ">{t.skills}</h1>
+    <h1 className={`${darkMode ? 'text-[#CBF281]':'text-[#4731D3]'} text-5xl font-bold  `}>{t.skills}</h1>
     </div>
     <div className="flex justify-center mb-20 h-96 space-x-16 ">
 
