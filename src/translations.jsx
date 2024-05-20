@@ -1,6 +1,6 @@
-import project1 from "./assets/image2.png";
-import project2 from "./assets/image2.png";
-import project3 from "./assets/image2.png";
+import project1 from "./assets/Rectangle 41.png";
+import project2 from "./assets/Rectangle 41.png";
+import project3 from "./assets/Rectangle 41.png";
 
 
 const translations = {
@@ -10,7 +10,8 @@ const translations = {
      skills:"Skills",
      profile:"Profile",
      projects:"Projects",
-     darkMode:"Dark Mode",
+     darkMode:"DARK MODE",
+     lightMode:"LIGHT MODE",
 
      informationSection:{
        basicInformation:"Basic Information",
@@ -20,8 +21,8 @@ const translations = {
        myCity:"Izmir",
        education:"Education",
        myEducation:{
-           university:"Namık Kemal University",
-           degree:"Electronic and Communication Engineering",
+           university:"Tekirdag NKU",
+           degree:"Electronic & Communication Engineering",
            year:"2016"},
 
        preferredRole:"Preferred Role",
@@ -81,8 +82,9 @@ const translations = {
        skills:"Beceriler",
        profile:"Profil",
        projects:"Projeler",
-       darkMode:"Karanlık Tema",
-       
+       darkMode:"KARANLIK TEMA",
+       lightMode:"AYDINLIK TEMA",
+
        informationSection:{
          basicInformation:"Temel Bilgiler",
          dateOfBirth:"Doğum Tarihi",
@@ -91,8 +93,8 @@ const translations = {
          myCity:"İzmir",
          education:"Eğitim",
          myEducation:{
-             university:"Namık Kemal Üniversitesi",
-             degree:"Elektronik ve Haberleşme Mühendisliği",
+             university:"Tekirdag NKU",
+             degree:"Elektronik & Haberleşme Mühendisliği",
              year:"2016"},
  
          preferredRole:"Tercih Ettiği Rol",

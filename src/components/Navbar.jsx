@@ -10,7 +10,7 @@ const Navbar = () => {
  
 
   const handleLanguageChange = () => {
-    dispatch(changeLanguage());
+  dispatch(changeLanguage());
   };
 
   const handleModeChange = () => {
@@ -19,15 +19,15 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className={`flex justify-end  ${darkMode ? 'bg-custom-gradient-dark' : 'bg-custom-gradient'}`} >
-        <div>
-          <button onClick={handleLanguageChange} className='text-[#CBF281] flex '>
-            {state.language === 'en' ? "Switch to Turkish" : "İngilizce'ye geç"}
+      <div className={`flex justify-end  ${darkMode ? 'bg-custom-gradient-dark' : 'bg-custom-gradient'} `} >
+        <div className=''>
+          <button onClick={handleLanguageChange} className= {`${ darkMode ? 'text-[#4731D3]':'text-[#CBF281]' } flex mr-10 `}>
+            {state.language === 'en' ? "SWITCH TO TURKISH" : "İNGİLİZCE'YE GEÇ"}
           </button>
         </div>
-        <div>
-          <button onClick={handleModeChange} className='text-[#4731D3] flex '>
-           {t.darkMode}
+        <div className='pr-64 '>
+          <button onClick={handleModeChange} className={`${ darkMode ? 'text-[#CBF281]': 'text-[#4731D3]' } flex ml-5`}>
+          {darkMode ? t.lightMode : t.darkMode}
           </button>
         </div>
       </div>
